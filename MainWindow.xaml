@@ -1,0 +1,31 @@
+﻿<Window x:Class="RegistroActores.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RegistroActores"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="450">
+        
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <!-- ActoresID -->
+            <Label Content="ActorID"/>
+            <TextBox x:Name="ActorIDTextBox" Width="100" Text="{Binding ActorID}"/>
+            <Button x:Name="BuscarButton" Content="Buscar" Click="BuscarButton_Click"/>
+        </StackPanel>
+
+        <!-- Nombres -->
+        <Label Content="Nombres"/>
+        <TextBox x:Name="NombresTextBox" Text="{Binding Nombres}"/>
+
+        <!-- Salarios -->
+        <Label Content="Salarios"/>
+        <TextBox x:Name="SalariosTextBox" Text="{Binding Salarios}"/>
+
+        <!-- BotonGuardar -->
+        <Button x:Name="GuardarButton" Content="Guardar" Click="GuardarButton_Click"/>
+    </StackPanel>
+
+
+</Window>

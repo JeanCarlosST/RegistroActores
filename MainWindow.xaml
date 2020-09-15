@@ -8,8 +8,8 @@
         Title="MainWindow" Height="450" Width="450">
         
     <StackPanel>
+        <!-- ActoresID -->
         <StackPanel Orientation="Horizontal">
-            <!-- ActoresID -->
             <Label Content="ActorID"/>
             <TextBox x:Name="ActorIDTextBox" Width="100" Text="{Binding ActorID}"/>
             <Button x:Name="BuscarButton" Content="Buscar" Click="BuscarButton_Click"/>

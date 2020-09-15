@@ -39,8 +39,6 @@ namespace RegistroActores
                 actor = found;
                 NombresTextBox.Text = actor.Nombres;
                 SalariosTextBox.Text = Convert.ToString(actor.Salario);
-                this.actor = new Actor();
-                this.DataContext = this.actor;
             }   
 
             context.Dispose();
@@ -59,8 +57,6 @@ namespace RegistroActores
             if(changes > 0)
             {
                 MessageBox.Show("Guardado");
-                this.actor = new Actor();
-                this.DataContext = this.actor;
             }
 
             NombresTextBox.Text = "";
